@@ -1,0 +1,71 @@
+.aside {
+    height: 1080px;
+    width: 319px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+p {
+    color: #FFFFFF;
+    font-weight: 100;
+}
+.burger-menu {
+    padding-left: 200px;
+    padding-right: 0px;
+    padding-top: 18px;
+    float: right;
+}
+.links {
+    padding-top: 120px;
+}
+.aside-link {
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    display: block;
+    color: #FFFFFF;
+    border-radius: 12px;
+    transition: all 1s ease;
+    width: 259px;
+    height: 60px;
+}
+
+.aside-link:hover {
+    background-color: #FF2288;
+    opacity: 1;
+}
+.Following {
+    color: #FFFFFF;
+}
+.search {
+    margin-top: 30px;
+    height: 56px;
+    width: 446px;
+}
+.top {
+    text-align: right;
+}
+
+.main {
+    margin-left: 350px;  
+    overflow:hidden;
+    display:inline-block;
+}
+.top-nav {
+    margin: 0;
+    padding-left: 350px;
+    overflow: hidden;
+    text-align: left;
+}
+.top-nav ul li {
+    display: inline;
+    padding: .2em 1em;
+    cursor: pointer;
+    color: #222222;
+}
