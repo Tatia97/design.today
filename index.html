@@ -8,55 +8,89 @@
     <body>
        <header>
            <div class="main">
-           <form action="#">
+           <form class="search-bar" action="#">
                <input class="search" type="text" name="search" placeholder="Search inspiration">
+               <img class="magnifying-glass" src="./images/Component 9 – 2.svg">
            </form>
            <div class="top">
-               <span>GO PRO!</span>
-               <img src="./images/Component 11 – 2.svg">
-               <img src="./images/Component 7 – 2.svg">
+               <span class="go-pro">GO PRO!</span>
+               <div class="notif">
+                    <img class="image" src="./images/Component 11 – 2.svg">
+                    <img id="pink-dot" src="./images/Ellipse 3.svg"> 
+               </div>
+               <div class="notif">
+                    <img class="image" src="./images/Component 7 – 2.svg">
+                    <img id="pink-dot" src="./images/Ellipse 3.svg">
+               </div>
                <img src="./images/Group 33.svg">
-               <button>UPLOAD!</button>
+               <button>UPLOAD</button>
                </div>
            </div>
        </header>
        <hr>
        <br>
-       <div class="top-nav">
+       <div class="top-nav"> 
            <nav>
                <ul>
-                   <li class="filter">ALL</li>
+                   <li class="filter">All</li>
                    <li class="filter">Web design</li>
                    <li class="filter">3D</li>
                    <li class="filter">App design</li>
                    <li class="filter">Animation</li>
                    <li class="filter">Illustration</li>
                    <li class="filter">Typography</li>
-                   <li class="filter">Filters</li>
+                   <li class="filter right"><img class="filter-icon" src="./images/Group 18.svg">Filters</li>
                </ul>
            </nav>
        </div>
        <div class="aside">
-           <p><b>Design.</b>today<img class="burger-menu" src="./images/Group 7.svg"></p>
-           <div class="links">
-           <ul>
-               <li class="aside-link"><img src="./images/Component 5 – 2.svg">Home</li>
-               <li class="aside-link"><img src="./images/Component 3 – 2.svg">Explore</li>
-               <li class="aside-link"><img src="./images/Component 4 – 2.svg">Folders</li>
-               <li class="aside-link"><img src="./images/Star@1X (1).png">Favourites</li>
-               <li class="aside-link"><img src="./images/Activity@1X.png">Activities</li>
-           </ul>
-           </div>
-           <div>
+           <div class="aside-top">
+                <p><b>Design.</b>today</p>
+                <img class="burger-menu" src="./images/Group 7.svg">
+            </div>
+           <div class="links1">
                <ul>
-                   <li><p>Following</p></li>
-                   <li class="Following"><span><img src="./images/Rectangle 40.svg">Sajon</span></li>
-                   <li class="Following"><span><img src="./images/Rectangle 41.svg">Tran Mau Tri Tam</span></li class="Following">
-                   <li class="Following"><span><img src="./images/Rectangle 42.svg"></span>Ghani Pradita</li class="Following">
-                   <li class="Following"><span><img src="./images/Rectangle 43.svg"></span>David Kovalev</li class="Following">
-                   <li class="Following"><span><img src="./images/Rectangle 44.svg"></span>Ryan Putnam</li>
-               </ul>
+                   <li class="aside-link"><img class="link-img" src="./images/Component 5 – 2.svg">Home</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Component 3 – 2.svg">Explore</li>
+                   <li class="aside-link"><img class="link-img"src="./images/Component 4 – 2.svg">Folders</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Star@1X (1).png">Favourites</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Activity@1X.png">Activities</li>
+                   <p class="middle">Following</p>
+                   <li class="aside-link"><img class="link-img" src="./images/Rectangle 40.svg">Sajon</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Rectangle 41.svg">Tran Mau Tri Tam</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Rectangle 42.svg">Ghani Pradita</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Rectangle 43.svg">David Kovalev</li>
+                   <li class="aside-link"><img class="link-img" src="./images/Rectangle 44.svg">Ryan Putnam</li>
+                   <p >Load more(15)</p>
+                </ul>
            </div>
        </div>
+       <div class="container">
+           <div class="cards">
+               <img class="card-pic" src="./images/Rectangle 45.svg">
+               <p class="card-text">UI Components for Unity Gaming</p>
+           </div>   
+           <div class="cards">
+               <img class="card-pic" src="./images/Rectangle 46.svg">
+               <p class="card-text">Analytics Mobile App – Blurr Series</p>
+           </div>   
+           <div class="cards">
+               <img class="card-pic" src="./images/Rectangle 47.svg">
+               <p class="card-text">Estaro – Dark-mode – Task Management App</p>
+           </div>   
+           <div class="cards">
+               <img class="card-pic" src="./images/Rectangle 48.svg">
+               <p class="card-text">Dark Mockup for Unity Gaming</p>
+           </div>   
+           <div class="cards">
+               <img class="card-pic" src="./images/Rectangle 45.svg">
+               <p class="card-text">SMM – Social Media Management – App UI</p>
+           </div>   
+           <div class="cards">
+               <img class="card-pic" src="./images/Rectangle 45.svg">
+               <p class="card-text">Food App 2.0 </p>
+           </div>   
+       </div>  
+       <button class="load-more">Load more</button>  
     </body>
 </html>
