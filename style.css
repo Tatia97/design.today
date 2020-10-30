@@ -100,7 +100,7 @@ button:hover {
     cursor: pointer;
 }
 .aside {
-    height: 1080px;
+    height: 100vh;
     width: 319px;
     position: fixed;
     overflow: auto;
