@@ -1,22 +1,108 @@
+@font-face {
+    font-family: "small";
+    src: url(./fonts/AvenirLTStd-Book.otf); format:"opentype";
+}
+@font-face {
+    font-family: "medium";
+    src: url(./fonts/AvenirLTStd-Medium.otf); format:"opentype";
+}
+@font-face {
+    font-family: "heavy";
+    src: url(./fonts/AvenirNextLTPro-Heavy.otf); format:"opentype";
+    font-style: normal;
+}
+
+.left-side-top {
+    display: flex;
+    justify-content: space-between;
+}
+.burger-menu {
+    cursor: pointer;
+}
+.left-side {
+    height: 100vh;
+    width: 319px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+h1 {
+    color: #FFFFFF;
+    font-family: small;
+    font-weight: 100;
+    font-size: 20px;
+}
+.bold {
+    font-family: heavy;
+    font-weight: bold;
+}
+.links {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    justify-content: space-evenly;
+}
+.left-side-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    width: 259px;
+    height: 60px;
+    padding: 15px 20px 10px 20px;
+    cursor: pointer;
+    font-family: medium;
+    font-size: 16px;
+}
+.link-img {
+    padding-right: 20px;
+}
+.left-side-link:hover, .following:hover {
+    background-color: #FF2288;
+    opacity: 1;
+}
+.middle {
+    padding-top: 96px;
+    padding-bottom: 35px;
+    font-family: heavy;
+    font-size: 12px;
+}
+.load-more {
+    cursor: pointer;
+    margin-top: 40px;
+    font-family: medium;
+}
 .main {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 40px;
+}
+.header {
     display: flex;
     text-align: right;
     justify-content: space-between;
-    margin-left: 350px;  
-    margin-right: 70px;
     overflow:hidden;
 }
 .search {
-    margin-top: 30px;
     margin-bottom: 30px;
     height: 56px;
     width: 446px;
-    padding-left: 20px;
-    padding-right: 45px;
     border: none;
     background-color: #F8F8F8;
     border-radius: 10px;
     outline: none;
+    padding-right: 40px;
+    font-family: small;
+    font-weight: 100;
+    font-size: 14px;
 }
 .search-bar {
     position: relative;
@@ -24,7 +110,7 @@
 .magnifying-glass {
     position: absolute;
     right: 10px;
-    top: 45px;
+    top: 17px;
     cursor: pointer;
 }
 .top {
@@ -35,7 +121,6 @@
     align-items: center;
     cursor: pointer;
 }
-
 .notif {
     display: inline-block;
     position: relative;
@@ -47,33 +132,41 @@
 }
 .go-pro {
     color:#FF2288;
-    font-size: 14;
+    font-size: 14px;
+    font-family: small;
+    font-weight: normal;
 }
-button {
+.upload {
     width: 129px;
     height: 56px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    outline: none;
+    font-family: small;
 }
-button:hover {
+.upload:hover {
     background-color: #FF2288;
     color: white;
 }
+.content {
+    margin-right: 20px;
+    margin-left: 10px;
+}
 .top-nav {
     margin: 0;
-    padding-left: 300px;
     overflow: hidden;
 }
 .top-nav ul {
-    padding: .2em 1em;
+    /* padding: .2em 1em; */
     color: #222222;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: small;
 }
 .right {
-    margin-left: 200px;
+    margin-left: 170px;
     display: flex;
     align-items: center;
     border: 0.5px solid grey;
@@ -92,72 +185,114 @@ button:hover {
 .filter:hover {
     background-color: #F2F2F2;
 }
-.aside-top {
-    display: flex;
-    justify-content: space-between;
-}
-.burger-menu {
-    cursor: pointer;
-}
-.aside {
-    height: 100vh;
-    width: 319px;
-    position: fixed;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    background-color: #222222;
-    padding-top: 45px;
-    padding-left: 30px;
-    padding-right: 30px; 
-}
-p {
-    color: #FFFFFF;
-    font-weight: 100;
-}
-.links1 {
-    padding-top: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-    color: #FFFFFF;
-    justify-content: space-evenly;
-}
-.aside-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 12px;
-    width: 259px;
-    height: 60px;
-    padding: 15px 20px 10px 20px;
-}
-.link-img {
-    padding-right: 20px;
-}
-.aside-link:hover, .following:hover {
-    background-color: #FF2288;
-    opacity: 1;
-}
-.middle {
-    padding-top: 96px;
-    padding-bottom: 35px;
+hr {
+    color: #111111;
+    border-top: 1px;
 }
 .container {
     display: flex;
-    margin-left: 300px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
-.cards {
+.card {
     display: flex;
     flex-direction: column;
 }
 .card-pic {
     cursor: pointer;
+    width: 300px;
 }
 .card-text {
       color: black;
-      padding-left: 30px;
       cursor: pointer;
+      font-family: medium;
+      text-align: center;
+}
+.load-more2 {
+    width: 289px;
+    height: 56px;
+    display:block;
+    margin: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    font-family: small;
+}
+.load-more2:hover {
+    background-color: #b9b6b68c
+}
+.top-designers {
+    margin: 70px 20px 70px 10px;
+    background-color: #FAFAFA;
+}
+.top-designers-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 78px 10px 55px 10px;
+    font-size: 32px;
+    font-family: small;
+}
+.view-all {
+    color: #222222;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.top-designers{
+    display: flex;
+    flex-direction: column;
+}
+.designers {
+    display: flex;
+    height: 300px;
+}
+.designer {
+    display: flex;
+    flex-direction: column;
+    margin: 9px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: small;
+}
+.designer-pic {
+    cursor: pointer;
+}
+.following-button {
+    width: 132px;
+    height: 44px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #FAFAFA;
+    border: 0.2px solid rgb(204, 204, 204);
+}
+.following-button:hover {
+    background-color: #ebebeb;
+    border: none;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: small;
+}
+footer ul {
+    display:flex;
+    flex-direction: column;
+    height: 350px;
+}
+footer ul li {
+    margin-top: 15px;
+    cursor: pointer;
+}
+.li-middle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.li-header {
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 576px) {
+    
 }
